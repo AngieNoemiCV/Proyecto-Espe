@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 
 
 
-const SportsScreen = ({navigation}) => {
+const TechScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.texto}>
@@ -16,7 +16,7 @@ const SportsScreen = ({navigation}) => {
 
 
 
-export default SportsScreen;
+export default TechScreen;
 
 const styles = StyleSheet.create({
   container: {

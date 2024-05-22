@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Image} from 'react-native';
 
 
 
-const Login = ({navigation}) => {
+const TechScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.texto}>
@@ -16,7 +16,7 @@ const Login = ({navigation}) => {
 
 
 
-export default Login;
+export default TechScreen;
 
 const styles = StyleSheet.create({
   container: {

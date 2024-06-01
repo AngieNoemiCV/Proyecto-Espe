@@ -1,40 +1,45 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Icon } from 'react-native-elements';
 
-
-
-
-const TechScreen = ({navigation}) => {
+const Perfil = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.texto}>
-        Todavía no hay ningún recordatorio. ¡Pulsa "+" para agregar uno!
-      </Text>
+      <TouchableOpacity style={styles.item}>
+        <Icon type='font-awesome' name='star' />
+        <Text>Puntaje </Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.item}>
+        <Icon type='font-awesome' name='bell' />
+        <Text>Notificaciones</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.item}>
+        <Icon type='font-awesome' name='history' />
+        <Text>Historial de Soluciones</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.item}>
+        <Icon type='font-awesome' name='question-circle' />
+        <Text>Ayuda y Soporte</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.item}>
+        <Icon type='font-awesome' name='sign-out' />
+        <Text>Cerrar Sesión</Text>
+      </TouchableOpacity>
     </View>
   );
-};
-
-
-
-export default TechScreen;
+}
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#8fcbbc',
   },
-  imagen: {
-    width: 100,
-    height: 100,
-  },
-  texto: {
-    fontSize: 18,
-    textAlign: 'center',
-    marginTop: 10,
-    marginBottom: 10,
-    marginLeft: 30,
-    marginRight: 30,
+  item: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 10,
   },
 });
+
+export default Perfil;
